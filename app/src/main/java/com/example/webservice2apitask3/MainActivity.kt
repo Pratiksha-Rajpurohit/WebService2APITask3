@@ -6,6 +6,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.webservice2apitask3.FirstAPIData.APIResponse
+import com.example.webservice2apitask3.FirstAPIData.ProductPOST
 import com.example.webservice2apitask3.databinding.ActivityMainBinding
 import com.google.gson.Gson
 import kotlinx.coroutines.CoroutineScope
@@ -36,6 +38,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.button2.setOnClickListener {
             ratingRetrofitResponse()
+        }
+
+        val secondAPI = SecondAPI()
+
+        binding.button3.setOnClickListener {
+            secondAPI.gsonResponse()
+        }
+
+        binding.button4.setOnClickListener {
+            secondAPI.retrofitResponse()
         }
 
 

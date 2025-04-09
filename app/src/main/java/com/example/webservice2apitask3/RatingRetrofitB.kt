@@ -1,5 +1,7 @@
 package com.example.webservice2apitask3
 
+import com.example.webservice2apitask3.FirstAPIData.APIResponse
+import com.example.webservice2apitask3.FirstAPIData.ProductPOST
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body

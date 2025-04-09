@@ -1,6 +1,4 @@
-package com.example.webservice2apitask3
-
-import java.util.ArrayList
+package com.example.webservice2apitask3.FirstAPIData
 
 data class APIResponse(
       var id :Int,
